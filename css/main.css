@@ -87,11 +87,14 @@ ul{
     position: sticky;
     top: 0;
     width: 100%;
+	padding: 4px 4px 4px 0;
 }
 
 /* Logo */
 .logo img{
-	width: 12%;
+	width: 40px;
+	padding-top: 5px;
+	padding-bottom: 4px;
 }
 
 /* Nav menu */
@@ -101,7 +104,6 @@ ul{
     position: fixed;
     background-color: var(--lightgrey);
     overflow: hidden;
-    
 }
 
 .menu a{
@@ -125,16 +127,17 @@ ul{
 .hamb{
     cursor: pointer;
     float: left;
-    padding: 40px 20px;
+    padding: 22px 8px;
 }
 
 
 .hamb-line {
     background: var(--light);
     display: block;
-    height: 2px;
+    height: 5px;
     position: relative;
-    width: 24px;
+    width: 30px;
+	border-radius: 20px;
     
 }
 
@@ -147,14 +150,15 @@ ul{
     position: absolute;
     transition: all .2s ease-out;
     width: 100%;
+	border-radius: 20px;
 }
 
 .hamb-line::before{
-    top: 5px;
+    top: 11px;
 }
 
 .hamb-line::after{
-    top: -5px;
+    top: -11px;
 }
 
 
@@ -183,32 +187,52 @@ ul{
     top:0;
 }
 
+/* Profile Icon */
 
-/* Responsiveness */
+.profile svg {
+	float: right;
+	margin-right: 10px;
+	margin-top: 5px;
+	padding-bottom: 3px;
+	height: auto;
+}
+
+
+/* Menu Responsiveness */
 
 @media (min-width: 768px) {
-    .nav{
+	.header {
+		display: grid;
+		grid-template-columns: auto auto;
+		grid-area:'logo nav';
+		padding: 12px;
+	}
+	.nav{
         max-height: none;
         top: 0;
-        position: relative;
-        float: right;
+        padding-left: 5%;
         width: fit-content;
         background-color: transparent;
-
+		
     }
-
+	
+	
     .menu li{
         float: left;
+		
     }
 
     .menu a:hover{
         background-color: transparent;
         color: var(--darkgrey);
-        
     }
     
     .hamb{
         display: none;
     }
+
+	.logo svg {
+		grid-area: logo;
+	}
 
 }
