@@ -189,12 +189,12 @@ ul{
 
 /* Profile Icon */
 
-.profile svg {
+.profile img {
 	float: right;
 	margin-right: 10px;
 	margin-top: 5px;
 	padding-bottom: 3px;
-	height: auto;
+	height: 48px;
 }
 
 
@@ -236,3 +236,10 @@ ul{
 	}
 
 }
+
+/* carousel */
+.carousel-item {
+	max-height: 50vh;
+	overflow: hidden;
+}
+
