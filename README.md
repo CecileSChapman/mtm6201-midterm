@@ -9,3 +9,7 @@ https://www.youtube.com/watch?v=zVjAA6UxvtU
 
 placeholder video
 https://www.youtube.com/watch?v=ScMzIvxBSi4
+
+netflix video carousel ui 
+https://www.youtube.com/watch?v=yq4BeRtUHbk
+https://github.com/WebDevSimplified/netflix-sliding-movie-ui

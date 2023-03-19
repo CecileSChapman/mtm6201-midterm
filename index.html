@@ -15,19 +15,21 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
+    <script src="index.js"></script>
+
 </head>
 <body>
     
     <!-- Navigation bar -->
-    <header class="header">
+    <header class="nav-header">
        
 
         <!-- Hamburger icon -->
         <input class="side-menu" type="checkbox" id="side-menu"/>
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-
+        
         <!-- Menu -->
-        <nav class="nav">
+        <nav class="nav" id="nav">
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a> </li>
@@ -56,15 +58,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <video src="images/placeholder-video.mp4" class="d-block w-100" controls></video>
-                <div class="player-controls">
-                </div>
+                <video src="images/placeholder-video.mp4" class="d-block w-100"></video>
               </div>
               <div class="carousel-item">
-                <video src="images/placeholder-video.mp4" class="d-block w-100" controls></video>
+                <video src="images/placeholder-video.mp4" class="d-block w-100"></video>
               </div>
               <div class="carousel-item">
-                <video src="images/placeholder-video.mp4" class="d-block w-100" controls></video>
+                <video src="images/placeholder-video.mp4" class="d-block w-100"></video>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -75,9 +75,49 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
+            
+            <!--play button not functional, i couldn't figure out the javascript-->
+            <button class="play" id="play">
+                <svg xmlns="http://www.w3.org/2000/svg" width="71.094" height="71.094" viewBox="0 0 71.094 71.094">
+                    <g id="Icon_feather-play-circle" data-name="Icon feather-play-circle" transform="translate(-1.5 -1.5)">
+                      <path id="Path_5" data-name="Path 5" d="M71.094,37.047A34.047,34.047,0,1,1,37.047,3,34.047,34.047,0,0,1,71.094,37.047Z" transform="translate(0 0)" fill="rgba(0,0,0,0.43)" stroke="#ff595e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                      <path id="Path_6" data-name="Path 6" d="M15,12,35.428,25.619,15,39.238Z" transform="translate(15.238 11.428)" fill="rgba(0,0,0,0.43)" stroke="#ff595e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+                    </g>
+                  </svg>
+            </button>
+        </div>
        </section>
 
+       <section class="continue-watching">
+        <div class="row">
+            <div class="header">
+              <h3 class="title">Continue watching</h3>
+              <div class="progress-bar"></div>
+            </div>
+            <div class="container">
+              <button class="handle left-handle">
+                <div class="text">&#8249;</div>
+              </button>
+              <div class="slider">
+                <img src="https://via.placeholder.com/210/00FF00?text=1">
+                <img src="https://via.placeholder.com/220/00FF00?text=2">
+                <img src="https://via.placeholder.com/230/00FF00?text=3">
+                <img src="https://via.placeholder.com/240/00FF00?text=4">
+                <img src="https://via.placeholder.com/250/00FF00?text=5">
+                <img src="https://via.placeholder.com/260/00FF00?text=6">
+                <img src="https://via.placeholder.com/270/00FF00?text=7">
+                <img src="https://via.placeholder.com/280/00FF00?text=8">
+                <img src="https://via.placeholder.com/250/00FF00?text=9">
+                <img src="https://via.placeholder.com/260/00FF00?text=10">
+                <img src="https://via.placeholder.com/270/00FF00?text=11">
+                <img src="https://via.placeholder.com/280/00FF00?text=12">
+              </div>
+              <button class="handle right-handle">
+                <div class="text">&#8250;</div>
+              </button>
+            </div>
+          </div>
+       </section>
     </main>
 
 
