@@ -92,6 +92,7 @@ ul{
     width: 100%;
 	padding: 4px 4px 0 0;
 	z-index: 9999;
+	text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
 
 
@@ -115,8 +116,7 @@ ul{
 .menu a{
     display: block;
     padding: 30px;
-    color: var(--light);
-   
+    color: var(--light)!important;
 }
 
 .menu a:hover{
@@ -388,9 +388,13 @@ ul{
   /* My Netflix Carousel Edits*/
 
 h1, h2, h3, h4  {
-	font-size: larger!important;
+	text-shadow: 2px 2px 3px rgb(32, 32, 32);
 	color: var(--light);
+}
+
+h3 {
 	padding-left: 5px;
+	font-size: medium!important;
 }
 
 .slider {
@@ -399,7 +403,8 @@ h1, h2, h3, h4  {
 }
 
 footer {
-	padding: 5px;
+	padding: 20px;
+	text-align: right;
 }
   
 /*large screens*/
@@ -411,13 +416,223 @@ footer {
 
 	.carousel {
 		padding-top: 0;
+		
 	}
+
+	.carousel-item {
+		height: 50vh;
+		
+	}
+
+	
 }
 
 /* about */
-
+body {
+	color: rgba(255, 255, 255, 0.925)!important;
+}
 h1 {
 	text-align: center;
 	padding: 30px;
+	
 }
+
+.about h1 {
+	font-size: xx-large;
+}
+
+.about {
+	margin: 8px;
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-area: 1 / 1 / span 1 / span 1;
+	font-size: medium;
+}
+
+.about img {
+	border-radius: 25px;
+	width: 100%;
+}
+.about-container {
+	padding: 1em;
+}
+
+.learn-more {
+	background-color: transparent;
+	border: none;
+}
+
+/* about responsive */
+@media (min-width: 960px) {
+	.about {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+	}
+	.about-image {
+		grid-area: 1 / 1 / span 2 / span 1;
+		height: auto;
+	}
+	.p-one {
+		grid-area: 1 / 2 / span 2 / span 1;
+		font-size: large;
+		margin: auto;
+	}
+	.p-two {
+		grid-area: 3 / 1 / span 2 / span 2;
+	}
+
+	.p-two h2 {
+		padding-bottom: 5px;
+	}
+
+	.about-container {
+		padding: 20px;
+	}
+
+	.learn-more {
+		grid-area: 4 / 1 / span 1 / span 2;
+	}
+}
+
+
+/*contact*/
+
+/*search bar*/
+
+.search {
+    display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	width: 100%;
+	margin: auto;
+	padding: 12px;
+	padding-bottom: 60px;
+}
+.search-bar {
+    width: 100%;
+	grid-area: 1 / 1 / span 1 / span 1;
+}
+.search-bar-style {
+    border: 1px solid #222;
+    width: 100%;
+    padding-left: 7px;
+    font-size: small;
+	border-radius: 25px;
+	box-shadow: 1px 1px 2px rgb(32, 32, 32);
+
+}
+
+input#site-search {
+    padding: 6px;
+}
+
+.search-button {
+    
+	grid-area: 1 / 1 / span 1 / span 1;
+	position: absolute;
+	z-index: 10;
+	padding-left: 5px;
+}
+.search-button button {
+    background-color: transparent;
+    color:#497E2F;
+    font-size: small;
+    padding: 7px;
+	border:none;
+}
+
+/*links*/
+
+.contact {
+	padding: 3%;
+}
+.contact a {
+	color: white!important;
+	padding-left: 5px;
+	padding-right:35%;
+	line-height: 2em;
+}
+
+.help-links {
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.help-links svg {
+	margin-top: 7px;
+
+}
+
+/*footer*/
+footer button {
+	background-color: transparent;
+	border: none;
+}
+
+
+.support-chat-buttons {
+	display: flex;
+	margin:auto;
+}
+.support-chat-buttons svg {
+	height: 85%;
+}
+
+
+.footer-chat {
+	border-top:2px solid #FF595E;
+	background-color: #7070707a;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.contact-footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 0px;
+}
+
+.footer-support{
+	margin:auto;
+}
+.footer-support p {
+	color:#FF595E;
+	font-weight:700;
+	text-align: left;
+	padding-left: 5px;
+	line-height: 1.2em;
+}
+
+
+
+/*contact responsive*/
+@media (min-width: 768px) {
+	.contact {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.contact a {
+		padding-right: 20%;
+	}
+
+	.footer-chat {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	.footer-support p {
+		font-size: large;
+	}
+
+	.support-chat-buttons {
+		grid-area: 1 / 3 / span 1 / span 1;
+	}
+
+}
+
+
+
+
 
