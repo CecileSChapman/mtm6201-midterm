@@ -2,7 +2,7 @@
 
 **note on errors**
 
-html errors are used in code that wasn't mine, and it's linked to the javascript that i can't edit
+html errors are used in code that wasn't mine, and it's linked to the javascript that i can't edit.
 i fixed all other errors, but i'm keeping that error so it doesn't break the carousel
 
 
