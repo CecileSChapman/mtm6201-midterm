@@ -19,7 +19,7 @@
 
 </head>
 <body>
-    
+  <div id="skip"><a href="#content">Skip to Main Content</a></div>
     <!-- Navigation bar -->
     <header class="nav-header">
        
@@ -29,11 +29,11 @@
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         
         <!-- Menu -->
-        <nav class="nav" id="nav">
+        <nav class="nav" id="nav" role="navigation">
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a> </li>
-                <li><a href="contact.html">Contact</a></li>
+              <li><a href="index.html" aria-label="Go to the Homepage">Home</a></li>
+              <li><a href="about.html" aria-label="Go to About page">About</a> </li>
+              <li><a href="contact.html" aria-label="Go to Contact page">Contact</a></li>
             </ul>
         </nav>
 
@@ -43,13 +43,13 @@
         <!--profile icon-->
         <a href="#" class="profile">
             <img src="images/profile-icon.svg" alt="profile picture">
-        </a>
+        </a>        
     </header>
 
     <!-- Main content -->
-    <main>
+    <main role="main">
         <!--top featured carousel-->
-       <section class="featured">
+       <section class="featured" role="banner">
         <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -77,7 +77,7 @@
             </button>
             
             <!--play button not functional, i couldn't figure out the javascript-->
-            <button class="play" id="play">
+            <button class="play" id="play" aria-label="play">
                 <svg xmlns="http://www.w3.org/2000/svg" width="71.094" height="71.094" viewBox="0 0 71.094 71.094">
                     <g id="Icon_feather-play-circle" data-name="Icon feather-play-circle" transform="translate(-1.5 -1.5)">
                       <path id="Path_5" data-name="Path 5" d="M71.094,37.047A34.047,34.047,0,1,1,37.047,3,34.047,34.047,0,0,1,71.094,37.047Z" transform="translate(0 0)" fill="rgba(0,0,0,0.43)" stroke="#ff595e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
@@ -88,7 +88,7 @@
         </div>
        </section>
 
-       <section>
+       <section id="content">
         <div class="row">
             <div class="header">
               <h3 class="title">Continue Watching</h3>
@@ -210,6 +210,7 @@
        </section>
 
        <footer>
+        <a href="#top" aria-label="Go back to the top">Back to top</a>
        &copy; Copyright 2023
        </footer>
 

@@ -19,7 +19,7 @@
 
 </head>
 <body>
-    
+    <div id="skip"><a href="#content">Skip to Main Content</a></div>
     <!-- Navigation bar -->
     <header class="nav-header">
        
@@ -29,11 +29,11 @@
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         
         <!-- Menu -->
-        <nav class="nav" id="nav">
+        <nav class="nav" id="nav" role="navigation">
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a> </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Go to the Homepage">Home</a></li>
+                <li><a href="about.html" aria-label="Go to About page">About</a> </li>
+                <li><a href="contact.html" aria-label="Go to Contact page">Contact</a></li>
             </ul>
         </nav>
 
@@ -64,7 +64,7 @@
                     </picture>
                 </div>
 
-            <div class="about-container p-one">
+            <div class="about-container p-one" id="content">
                 <p>Welcome to Viral Academy, the ultimate streaming destination for young adults who love to laugh and connect with relatable content. Our team of 10 dedicated professionals is committed to bringing you the very best in comedy and entertainment, right at your fingertips. <br> <br>
 
                 At Viral Academy, we know that life can be stressful, and sometimes you just need a good laugh to unwind. That's why we offer a vast selection of hilarious and relatable content that will keep you entertained for hours on end. From side-splitting comedies to heartwarming dramas, we've got something for everyone.<br>
@@ -82,7 +82,7 @@
                 </p>
                 </div>
 
-                <button class="learn-more">
+                <button class="learn-more" aria-label="Learn more">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="163" height="65" viewBox="0 0 163 65">
                         <defs>
                           <filter id="Rectangle_21" x="0" y="0" width="163" height="65" filterUnits="userSpaceOnUse">
@@ -110,9 +110,10 @@
     </section>
 
     <footer>
+        <a href="#top" aria-label="Go back to the top">Back to top</a>
         &copy; Copyright 2023
     </footer>
-    
+
     </main>
 
 </body>

@@ -49,7 +49,25 @@ table {
 
 /* css start */
 
-/* Theming */
+/*skip links*/
+#skip a
+{
+position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;
+}
+ 
+#skip a:focus
+{
+position:static;
+width:auto;
+height:auto;
+}
+
+/* nav */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root{
@@ -480,6 +498,8 @@ h1 {
 	.about-image {
 		grid-area: 1 / 1 / span 2 / span 1;
 		height: auto;
+		width: 80%;
+		margin: auto;
 	}
 	.p-one {
 		grid-area: 1 / 2 / span 2 / span 1;

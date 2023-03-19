@@ -23,7 +23,7 @@
 
 </head>
 <body>
-    
+    <div id="skip"><a href="#content">Skip to Main Content</a></div>
     <!-- Navigation bar -->
     <header class="nav-header">
        
@@ -33,11 +33,11 @@
         <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         
         <!-- Menu -->
-        <nav class="nav" id="nav">
+        <nav class="nav" id="nav" role="navigation">
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a> </li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" aria-label="Go to the Homepage">Home</a></li>
+                <li><a href="about.html" aria-label="Go to About page">About</a> </li>
+                <li><a href="contact.html" aria-label="Go to Contact page">Contact</a></li>
             </ul>
         </nav>
 
@@ -57,7 +57,7 @@
             <form>
                 <div class="search">
                     <div class="search-button">
-                        <button>
+                        <button aria-label="Search">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </div> <!--end search-button-->
@@ -68,7 +68,7 @@
                 </div> <!--end search-->
             </form>
 
-            <section class="contact">
+            <section class="contact" id="content">
                 <div class="account">
                     <h3>
                         Account
@@ -124,6 +124,7 @@
             </section> <!--end contact-->
         </div>
         
+        
         <footer class="contact-footer">
             <section class="footer-chat">
 
@@ -132,7 +133,7 @@
                 </div>
 
                 <div class="support-chat-buttons">
-                <button class="call-button">
+                <button class="call-button" aria-label="Call Support">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="67" viewBox="0 0 115 67">
                         <defs>
                           <filter id="Path_20" x="0" y="0" width="115" height="67" filterUnits="userSpaceOnUse">
@@ -156,7 +157,7 @@
                     </svg>   
                 </button>
 
-                <button class="chat-button">
+                <button class="chat-button" aria-label="Chat Support">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="67" viewBox="0 0 115 67">
                         <defs>
                           <filter id="Path_19" x="0" y="0" width="115" height="67" filterUnits="userSpaceOnUse">
