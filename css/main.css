@@ -48,6 +48,7 @@ table {
 }
 
 /* css start */
+
 /* Theming */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
@@ -386,7 +387,7 @@ ul{
 
   /* My Netflix Carousel Edits*/
 
-h3 {
+h1, h2, h3, h4  {
 	font-size: larger!important;
 	color: var(--light);
 	padding-left: 5px;
@@ -411,5 +412,12 @@ footer {
 	.carousel {
 		padding-top: 0;
 	}
+}
+
+/* about */
+
+h1 {
+	text-align: center;
+	padding: 30px;
 }
 
