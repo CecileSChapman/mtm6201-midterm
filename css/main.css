@@ -109,7 +109,7 @@ ul{
     top: 0;
     width: 100%;
 	padding: 4px 4px 0 0;
-	z-index: 9999;
+	z-index: 99;
 	text-shadow: 1px 1px 2px rgb(32, 32, 32);
 }
 
@@ -426,10 +426,9 @@ footer {
 	text-align: right;
 }
 
-.carousel-control.left, .carousel-control.right {
-	left: 0;
-	z-index: 99;
-  }
+.carousel-control-prev, .carousel-control-next {
+z-index: 99999999999999999;
+}
   
 /*large screens*/
 @media (min-width: 768px) {
